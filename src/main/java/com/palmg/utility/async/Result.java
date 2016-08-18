@@ -12,11 +12,9 @@
  */
 package com.palmg.utility.async;
 
-
 /**
- * <h3>异步返回的结果
- * <p>
- * 用isSuccess标记异步返回的结果是否成功，true:处理成功/false处理失败。 如果返回成功，使用getResult可以获取模板指定的数据
+ * <h3>异步返回的结果</h3>
+ * <p>用isSuccess标记异步返回的结果是否成功，true:处理成功/false处理失败。 如果返回成功，使用getResult可以获取模板指定的数据
  * </p>
  * 
  * @author chkui
@@ -24,19 +22,22 @@ package com.palmg.utility.async;
 public interface Result<T> {
 	/**
 	 * 标记处理结果是否成功
+	 * 
 	 * @return true/false
 	 */
 	boolean isSuccess();
 
 	/**
 	 * 获取返回的数据
-	 * @return
+	 * 
+	 * @return 异步调用返回的数据
 	 */
 	T getResult();
 
 	/**
 	 * 获取导致的异常
-	 * @return
+	 * 
+	 * @return 异步调用返回的异常
 	 */
 	Throwable getCause();
 }

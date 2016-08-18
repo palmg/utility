@@ -44,7 +44,7 @@ public class AyscReturnResult<T> implements Result<T> {
 
 	/**
 	 * 执行成功时返回数据
-	 * @param t
+	 * @param t 要返回给调用者的数据
 	 */
 	public AyscReturnResult(T t){
 		isSuc = true;
@@ -53,7 +53,7 @@ public class AyscReturnResult<T> implements Result<T> {
 	
 	/**
 	 * 执行失败时返回异常
-	 * @param ex
+	 * @param ex 要返回给调用者的异常信息
 	 */
 	public AyscReturnResult(Throwable ex){
 		this.exception = ex;

@@ -1,4 +1,4 @@
-package com.palmg.utility.asyc.impl;
+package com.palmg.utility.async.impl;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
